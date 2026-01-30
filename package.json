@@ -1,0 +1,44 @@
+{
+  "name": "odin-test-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack ",
+    "dev": "webpack serve ",
+    "deploy": "npm run build && git add dist -f && git commit -m \"Deployment commit\" && git subtree push --prefix dist origin gh-pages",
+    "start": "npm run build && npm run dev",
+    "commit": "git add . && git commit -m \"commit\" && git push",
+    "watch" : "jest --watch ./src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reverse-smartass/odin-test-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.6",
+    "@eslint/js": "^9.39.2",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-vue": "^10.7.0",
+    "globals": "^17.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.6",
+    "jest": "^30.2.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "bugs": {
+    "url": "https://github.com/reverse-smartass/odin-test-practice/issues"
+  },
+  "homepage": "https://github.com/reverse-smartass/odin-test-practice#readme",
+  "dependencies": {
+    "chart.js": "^4.5.1"
+  }
+}
