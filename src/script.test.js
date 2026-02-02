@@ -78,8 +78,8 @@ test("Is Numerical Array", () => {
 });
 
 test("Analyze Array", () => {
-  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toStrictEqual({
-    average: 4,
+  expect(analyzeArray([1, 8, 2, 4, 2, 6])).toStrictEqual({
+    average: 23/6,
     min: 1,
     max: 8,
     length: 6,
